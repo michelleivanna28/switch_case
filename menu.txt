@@ -1,14 +1,56 @@
-int i = random.Next (0,3); // 0 <= i <3
-//Console.WriteLine(i);
-switch (i)
-	{
-	case 0:
-		food = "ramen";
                 break;
-	case 1:
-		food = "spaghetti";
-		break;
-	case 2:
-		food = "salad";
-		break;
+ case 1:
+  food = "spaghetti";
+  break;
+ case 2:
+  food = "salad";
+  break;
+   case 3:
+     food = "sushi";
+     break;
+   case 4:
+     food = "chicken";
+     break;
+   case 5:
+     food = "ice cream";
+     break;
+   case 6:
+     food = "burger";
+     break;
+   case 7:
+     food = "nasi lemak";
+     break;
+            }      
 Console.WriteLine ("Random recommendation:"+ food + ".");
+}
+
+switch(food)
+{
+ case "nasi lemak":
+         Console.WriteLine("it cost u NT 400");
+    break; 
+ case "sushi":
+         Console.WriteLine("it cost u NT 300");
+    break; 
+   case "chicken":
+         Console.WriteLine("it cost u NT 250");
+    break;
+ case "ramen":
+         Console.WriteLine("it cost u NT 200");
+         break;
+   case "burger":
+         Console.WriteLine("it cost u NT 200");
+    break;
+ case "spaghetti":
+         Console.WriteLine("it cost u NT 180");
+         break;
+ case "ice cream":
+         Console.WriteLine("it cost u NT 100");
+    break;
+ case "salad":
+         Console.WriteLine("it cost u NT 60");
+         break;
+ default:
+         Console.WriteLine("sorry, we dont sell " + food + ".");
+         break;
+}
